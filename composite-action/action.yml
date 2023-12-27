@@ -1,0 +1,13 @@
+name: 'My Composite Action'
+description: 'Description of your composite action'
+author: 'Arya Parashar'
+inputs:
+  exampleInput:
+    description: 'An example input'
+    required: true
+    default: 'default value'
+runs:
+  using: 'composite'
+  steps:
+    - run: echo "Hello, this is your composite action!"
+      shell: bash
